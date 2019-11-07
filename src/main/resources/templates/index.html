@@ -1,0 +1,804 @@
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <title>Welcome</title>-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Welcome</h1>-->
+<!--<h2> Hello Operator</h2>-->
+
+<!--&lt;!&ndash;-->
+
+<!--   In Thymeleaf the equivalent of-->
+<!--   JSP's ${pageContext.request.contextPath}/edit.html-->
+<!--   would be @{/edit.html}-->
+
+<!--   &ndash;&gt;-->
+
+<!--<a th:href="@{/personList}">Person List</a>-->
+
+<!--</body>-->
+
+<!--</html>-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Page 1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<!--    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/axure_rp_page.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/data/styles.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/files/page_1/styles.css}"/>
+<!--    <link href="data/styles.css" type="text/css" rel="stylesheet"/>-->
+<!--    <link href="files/page_1/styles.css" type="text/css" rel="stylesheet"/>-->
+    <script src="/scripts/jquery-3.2.1.min.js"></script>
+    <script src="/scripts/axure/axQuery.js"></script>
+    <script src="/scripts/axure/globals.js"></script>
+    <script src="/scripts/axutils.js"></script>
+    <script src="/scripts/axure/annotation.js"></script>
+    <script src="/scripts/axure/axQuery.std.js"></script>
+    <script src="/scripts/axure/doc.js"></script>
+    <script src="/scripts/messagecenter.js"></script>
+    <script src="/scripts/axure/events.js"></script>
+    <script src="/scripts/axure/recording.js"></script>
+    <script src="/scripts/axure/action.js"></script>
+    <script src="/scripts/axure/expr.js"></script>
+    <script src="/scripts/axure/geometry.js"></script>
+    <script src="/scripts/axure/flyout.js"></script>
+    <script src="/scripts/axure/model.js"></script>
+    <script src="/scripts/axure/repeater.js"></script>
+    <script src="/scripts/axure/sto.js"></script>
+    <script src="/scripts/axure/utils.temp.js"></script>
+    <script src="/scripts/axure/variables.js"></script>
+    <script src="/scripts/axure/drag.js"></script>
+    <script src="/scripts/axure/move.js"></script>
+    <script src="/scripts/axure/visibility.js"></script>
+    <script src="/scripts/axure/style.js"></script>
+    <script src="/scripts/axure/adaptive.js"></script>
+    <script src="/scripts/axure/tree.js"></script>
+    <script src="/scripts/axure/init.temp.js"></script>
+    <script src="/scripts/axure/legacy.js"></script>
+    <script src="/scripts/axure/viewer.js"></script>
+    <script src="/scripts/axure/math.js"></script>
+    <script src="/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/page_1/data.js"></script>
+    <script type="text/javascript">
+        $axure.utils.getTransparentGifPath = function() { return '/images/transparent.gif'; };
+        $axure.utils.getOtherPath = function() { return '/Other.html'; };
+        $axure.utils.getReloadPath = function() { return '/reload.html'; };
+     </script>
+
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+</head>
+<body>
+<div id="base" class="">
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u0" class="ax_default box_1">
+        <div id="u0_div" class=""></div>
+        <div id="u0_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u1" class="ax_default box_1">
+        <div id="u1_div" class=""></div>
+        <div id="u1_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Placeholder) -->
+    <div id="u2" class="ax_default placeholder">
+        <img id="u2_img" class="img " src="images/page_1/u2.svg"/>
+        <div id="u2_text" class="text ">
+            <p><span>Logo</span></p>
+        </div>
+    </div>
+
+    <!-- phoneNumber (Text Field) -->
+    <div id="u3" class="ax_default text_field" data-label="phoneNumber">
+        <div id="u3_div" class=""></div>
+        <input id="u3_input" type="text" value="" class="u3_input"/>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u4" class="ax_default" data-label="Button1">
+        <div id="u4_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u4_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u5" class="ax_default button">
+                    <div id="u5_div" class=""></div>
+                    <div id="u5_text" class="text ">
+                        <p><span>1</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u4_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u4_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u6" class="ax_default button">
+                    <div id="u6_div" class=""></div>
+                    <div id="u6_text" class="text ">
+                        <p><span>1</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u7" class="ax_default" data-label="Button1">
+        <div id="u7_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u7_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u8" class="ax_default button">
+                    <div id="u8_div" class=""></div>
+                    <div id="u8_text" class="text ">
+                        <p><span>2</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u7_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u7_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u9" class="ax_default button">
+                    <div id="u9_div" class=""></div>
+                    <div id="u9_text" class="text ">
+                        <p><span>2</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u10" class="ax_default" data-label="Button1">
+        <div id="u10_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u10_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u11" class="ax_default button">
+                    <div id="u11_div" class=""></div>
+                    <div id="u11_text" class="text ">
+                        <p><span>3</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u10_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u10_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u12" class="ax_default button">
+                    <div id="u12_div" class=""></div>
+                    <div id="u12_text" class="text ">
+                        <p><span>3</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u13" class="ax_default" data-label="Button1">
+        <div id="u13_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u13_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u14" class="ax_default button">
+                    <div id="u14_div" class=""></div>
+                    <div id="u14_text" class="text ">
+                        <p><span>4</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u13_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u13_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u15" class="ax_default button">
+                    <div id="u15_div" class=""></div>
+                    <div id="u15_text" class="text ">
+                        <p><span>4</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u16" class="ax_default" data-label="Button1">
+        <div id="u16_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u16_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u17" class="ax_default button">
+                    <div id="u17_div" class=""></div>
+                    <div id="u17_text" class="text ">
+                        <p><span>5</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u16_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u16_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u18" class="ax_default button">
+                    <div id="u18_div" class=""></div>
+                    <div id="u18_text" class="text ">
+                        <p><span>5</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u19" class="ax_default" data-label="Button1">
+        <div id="u19_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u19_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u20" class="ax_default button">
+                    <div id="u20_div" class=""></div>
+                    <div id="u20_text" class="text ">
+                        <p><span>6</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u19_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u19_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u21" class="ax_default button">
+                    <div id="u21_div" class=""></div>
+                    <div id="u21_text" class="text ">
+                        <p><span>6</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u22" class="ax_default" data-label="Button1">
+        <div id="u22_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u22_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u23" class="ax_default button">
+                    <div id="u23_div" class=""></div>
+                    <div id="u23_text" class="text ">
+                        <p><span>7</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u22_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u22_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u24" class="ax_default button">
+                    <div id="u24_div" class=""></div>
+                    <div id="u24_text" class="text ">
+                        <p><span>7</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u25" class="ax_default" data-label="Button1">
+        <div id="u25_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u25_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u26" class="ax_default button">
+                    <div id="u26_div" class=""></div>
+                    <div id="u26_text" class="text ">
+                        <p><span>8</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u25_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u25_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u27" class="ax_default button">
+                    <div id="u27_div" class=""></div>
+                    <div id="u27_text" class="text ">
+                        <p><span>8</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u28" class="ax_default" data-label="Button1">
+        <div id="u28_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u28_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u29" class="ax_default button">
+                    <div id="u29_div" class=""></div>
+                    <div id="u29_text" class="text ">
+                        <p><span>9</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u28_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u28_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u30" class="ax_default button">
+                    <div id="u30_div" class=""></div>
+                    <div id="u30_text" class="text ">
+                        <p><span>9</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u31" class="ax_default" data-label="Button1">
+        <div id="u31_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u31_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u32" class="ax_default button">
+                    <div id="u32_div" class=""></div>
+                    <div id="u32_text" class="text ">
+                        <p><span>*</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u31_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u31_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u33" class="ax_default button">
+                    <div id="u33_div" class=""></div>
+                    <div id="u33_text" class="text ">
+                        <p><span>*</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u34" class="ax_default" data-label="Button1">
+        <div id="u34_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u34_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u35" class="ax_default button">
+                    <div id="u35_div" class=""></div>
+                    <div id="u35_text" class="text ">
+                        <p><span>0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u34_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u34_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u36" class="ax_default button">
+                    <div id="u36_div" class=""></div>
+                    <div id="u36_text" class="text ">
+                        <p><span>0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button1 (Dynamic Panel) -->
+    <div id="u37" class="ax_default" data-label="Button1">
+        <div id="u37_state0" class="panel_state" data-label="StandBy" style="">
+            <div id="u37_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u38" class="ax_default button">
+                    <div id="u38_div" class=""></div>
+                    <div id="u38_text" class="text ">
+                        <p><span>#</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u37_state1" class="panel_state" data-label="OnHover" style="visibility: hidden;">
+            <div id="u37_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u39" class="ax_default button">
+                    <div id="u39_div" class=""></div>
+                    <div id="u39_text" class="text ">
+                        <p><span>#</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u40" class="ax_default button">
+        <div id="u40_div" class=""></div>
+        <div id="u40_text" class="text ">
+            <p><span>Позвонить</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u41" class="ax_default button">
+        <div id="u41_div" class=""></div>
+        <div id="u41_text" class="text ">
+            <p><span>Сброс</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Ellipse) -->
+    <div id="u42" class="ax_default ellipse">
+        <img id="u42_img" class="img " src="images/page_1/u42.svg"/>
+        <div id="u42_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u43" class="ax_default label">
+        <div id="u43_div" class=""></div>
+        <div id="u43_text" class="text ">
+            <p><span>Онлайн</span></p>
+        </div>
+    </div>
+
+    <!-- Incoming (Dynamic Panel) -->
+    <div id="u44" class="ax_default ax_default_hidden" data-label="Incoming" style="display:none; visibility: hidden">
+        <div id="u44_state0" class="panel_state" data-label="Income" style="">
+            <div id="u44_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u45" class="ax_default label">
+                    <div id="u45_div" class=""></div>
+                    <div id="u45_text" class="text ">
+                        <p><span>Поступил звонок<br>с номера +79219998877</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u46" class="ax_default button">
+                    <div id="u46_div" class=""></div>
+                    <div id="u46_text" class="text ">
+                        <p><span>Принять</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u47" class="ax_default button">
+                    <div id="u47_div" class=""></div>
+                    <div id="u47_text" class="text ">
+                        <p><span>Отклонить</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u44_state1" class="panel_state" data-label="InProgress" style="visibility: hidden;">
+            <div id="u44_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u48" class="ax_default label">
+                    <div id="u48_div" class=""></div>
+                    <div id="u48_text" class="text ">
+                        <p><span>Соединено с + 7 (921)999-888-77... </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mainContent (Dynamic Panel) -->
+    <div id="u49" class="ax_default ax_default_hidden" data-label="mainContent" style="display:none; visibility: hidden">
+        <div id="u49_state0" class="panel_state" data-label="Current" style="">
+            <div id="u49_state0_content" class="panel_state_content">
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u50" class="ax_default text_field">
+                    <div id="u50_div" class=""></div>
+                    <input id="u50_input" type="text" value="+7(921) 999-88-77" class="u50_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u51" class="ax_default text_field">
+                    <div id="u51_div" class=""></div>
+                    <input id="u51_input" type="text" value="Иванов Иван Иванович" class="u51_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u52" class="ax_default text_field">
+                    <div id="u52_div" class=""></div>
+                    <input id="u52_input" type="text" value="36" class="u52_input"/>
+                </div>
+
+                <!-- Unnamed (Droplist) -->
+                <div id="u53" class="ax_default droplist">
+                    <div id="u53_div" class=""></div>
+                    <select id="u53_input" class="u53_input">
+                        <option class="u53_input_option" value="Выберите специалиста">Выберите специалиста</option>
+                        <option class="u53_input_option" value="Неврологу">Неврологу</option>
+                        <option class="u53_input_option" value="Стоматологу">Стоматологу</option>
+                        <option class="u53_input_option" value="Терапевту">Терапевту</option>
+                        <option class="u53_input_option" value="ЛОР">ЛОР</option>
+                    </select>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u54" class="ax_default label">
+                    <div id="u54_div" class=""></div>
+                    <div id="u54_text" class="text ">
+                        <p><span>Звонок с номера</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u55" class="ax_default label">
+                    <div id="u55_div" class=""></div>
+                    <div id="u55_text" class="text ">
+                        <p><span>ФИО</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u56" class="ax_default label">
+                    <div id="u56_div" class=""></div>
+                    <div id="u56_text" class="text ">
+                        <p><span>Полных лет</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u57" class="ax_default label">
+                    <div id="u57_div" class=""></div>
+                    <div id="u57_text" class="text ">
+                        <p><span>Записать к...</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u58" class="ax_default button">
+                    <div id="u58_div" class=""></div>
+                    <div id="u58_text" class="text ">
+                        <p><span>СОХРАНИТЬ</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="u49_state1" class="panel_state" data-label="Hystory" style="visibility: hidden;">
+            <div id="u49_state1_content" class="panel_state_content">
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u59" class="ax_default box_1">
+                    <div id="u59_div" class=""></div>
+                    <div id="u59_text" class="text " style="display:none; visibility: hidden">
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u60" class="ax_default box_1">
+                    <div id="u60_div" class=""></div>
+                    <div id="u60_text" class="text " style="display:none; visibility: hidden">
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u61" class="ax_default label">
+                    <div id="u61_div" class=""></div>
+                    <div id="u61_text" class="text ">
+                        <p><span>Входящий с номера</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u62" class="ax_default label">
+                    <div id="u62_div" class=""></div>
+                    <div id="u62_text" class="text ">
+                        <p><span>ФИО</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u63" class="ax_default label">
+                    <div id="u63_div" class=""></div>
+                    <div id="u63_text" class="text ">
+                        <p><span>Полных лет</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u64" class="ax_default text_field">
+                    <div id="u64_div" class=""></div>
+                    <input id="u64_input" type="text" value="+7(921)999-88-77" class="u64_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u65" class="ax_default text_field">
+                    <div id="u65_div" class=""></div>
+                    <input id="u65_input" type="text" value="Иванов Иван Иванович" class="u65_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u66" class="ax_default text_field">
+                    <div id="u66_div" class=""></div>
+                    <input id="u66_input" type="text" value="36" class="u66_input"/>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u67" class="ax_default label">
+                    <div id="u67_div" class=""></div>
+                    <div id="u67_text" class="text ">
+                        <p><span>Записать к...</span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Droplist) -->
+                <div id="u68" class="ax_default droplist">
+                    <div id="u68_div" class=""></div>
+                    <select id="u68_input" class="u68_input">
+                        <option class="u68_input_option" value="Выберите специалиста">Выберите специалиста</option>
+                        <option class="u68_input_option" value="Неврологу">Неврологу</option>
+                        <option class="u68_input_option" value="Стоматологу">Стоматологу</option>
+                        <option class="u68_input_option" value="Терапевту">Терапевту</option>
+                        <option class="u68_input_option" selected value="ЛОР">ЛОР</option>
+                    </select>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u69" class="ax_default box_1">
+                    <div id="u69_div" class=""></div>
+                    <div id="u69_text" class="text " style="display:none; visibility: hidden">
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u70" class="ax_default text_field">
+                    <div id="u70_div" class=""></div>
+                    <input id="u70_input" type="text" value="+7(921)999-88-66" class="u70_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u71" class="ax_default text_field">
+                    <div id="u71_div" class=""></div>
+                    <input id="u71_input" type="text" value="Петров Петр Петрович" class="u71_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u72" class="ax_default text_field">
+                    <div id="u72_div" class=""></div>
+                    <input id="u72_input" type="text" value="32" class="u72_input"/>
+                </div>
+
+                <!-- Unnamed (Droplist) -->
+                <div id="u73" class="ax_default droplist">
+                    <div id="u73_div" class=""></div>
+                    <select id="u73_input" class="u73_input">
+                        <option class="u73_input_option" value="Выберите специалиста">Выберите специалиста</option>
+                        <option class="u73_input_option" value="Неврологу">Неврологу</option>
+                        <option class="u73_input_option" value="Стоматологу">Стоматологу</option>
+                        <option class="u73_input_option" selected value="Терапевту">Терапевту</option>
+                        <option class="u73_input_option" value="ЛОР">ЛОР</option>
+                    </select>
+                </div>
+
+                <!-- Unnamed (Rectangle) -->
+                <div id="u74" class="ax_default box_1">
+                    <div id="u74_div" class=""></div>
+                    <div id="u74_text" class="text " style="display:none; visibility: hidden">
+                        <p></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u75" class="ax_default text_field">
+                    <div id="u75_div" class=""></div>
+                    <input id="u75_input" type="text" value="+7(921)999-88-55" class="u75_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u76" class="ax_default text_field">
+                    <div id="u76_div" class=""></div>
+                    <input id="u76_input" type="text" value="Сидоров Федр Сергеевич" class="u76_input"/>
+                </div>
+
+                <!-- Unnamed (Text Field) -->
+                <div id="u77" class="ax_default text_field">
+                    <div id="u77_div" class=""></div>
+                    <input id="u77_input" type="text" value="45" class="u77_input"/>
+                </div>
+
+                <!-- Unnamed (Droplist) -->
+                <div id="u78" class="ax_default droplist">
+                    <div id="u78_div" class=""></div>
+                    <select id="u78_input" class="u78_input">
+                        <option class="u78_input_option" value="Выберите специалиста">Выберите специалиста</option>
+                        <option class="u78_input_option" selected value="Неврологу">Неврологу</option>
+                        <option class="u78_input_option" value="Стоматологу">Стоматологу</option>
+                        <option class="u78_input_option" value="Терапевту">Терапевту</option>
+                        <option class="u78_input_option" value="ЛОР">ЛОР</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u79" class="ax_default link_button">
+        <div id="u79_div" class=""></div>
+        <div id="u79_text" class="text ">
+            <p><span>ТЕКУЩИЙ ЗВОНОК</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u80" class="ax_default link_button">
+        <div id="u80_div" class=""></div>
+        <div id="u80_text" class="text ">
+            <p><span>ИСТОРИЯ</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u81" class="ax_default button">
+        <div id="u81_div" class=""></div>
+        <div id="u81_text" class="text ">
+            <p><span>СМОДЕЛИРОВАТЬ ВХОДЯЩИЙ ЗВОНОК</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u82" class="ax_default label">
+        <div id="u82_div" class=""></div>
+        <div id="u82_text" class="text ">
+            <p><span>Ваш номер:</span></p>
+        </div>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u83" class="ax_default label">
+        <div id="u83_div" class=""></div>
+        <div id="u83_text" class="text ">
+            <p><span>+7 956 333 55 45</span></p>
+        </div>
+    </div>
+</div>
+<script src="resources/scripts/axure/ios.js"></script>
+</body>
+</html>
+
