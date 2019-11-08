@@ -6,7 +6,7 @@
     <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
     <!--<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>-->
     <!--  <script th:src="@{/webjars/bootstrap/css/bootstrap.min.css}"></script>-->
-      <script th:src="@{/js/main.js}"></script>
+    <script th:src="@{/scripts/main.js}"></script>
     <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
 <!--    <script src="/scripts/bootstrap.min.js"></script>-->
 </head>
@@ -25,7 +25,7 @@
         <!--  <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>-->
         <!--  <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>-->
       <tr th:each="worker : ${workers}">
-        <button type="button" onclick="select($event)" class="list-group-item list-group-item-action" th:text="${worker.position}"></button>
+        <button type="button" onclick="select1()" class="list-group-item list-group-item-action" th:text="${worker.position}"></button>
       </tr>
     </div>
     <div>

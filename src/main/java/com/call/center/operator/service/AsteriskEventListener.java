@@ -15,7 +15,7 @@ public class AsteriskEventListener implements ManagerEventListener {
             AMIConnection.getInstance().addEventListener(this);
             AMIConnection.getInstance().login();
             AMIConnection.getInstance().sendAction(new StatusAction());
-            Thread.sleep(10000);
+            Thread.sleep(60000);
             AMIConnection.getInstance().logoff();
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,6 +32,7 @@ public class AsteriskEventListener implements ManagerEventListener {
     public void onManagerEvent(ManagerEvent event)
     {
         // just print received events
-        System.out.println(event);
+        System.out.println("EVENT " +event.getCallerIdName());
+        System.out.println("EVENT 2" +event.getCallerIdNum());
     }
 }
