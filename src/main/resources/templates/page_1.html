@@ -2,41 +2,49 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
-<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-  <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-  <!--<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>-->
-<!--  <script th:src="@{/webjars/bootstrap/css/bootstrap.min.css}"></script>-->
-<!--  <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>-->
-  <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
-  <script src="/scripts/bootstrap.min.js"></script>
+    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <!--<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>-->
+    <!--  <script th:src="@{/webjars/bootstrap/css/bootstrap.min.css}"></script>-->
+      <script th:src="@{/js/main.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+<!--    <script src="/scripts/bootstrap.min.js"></script>-->
+</head>
 <body>
 
+<div th:insert="header::logo"></div>
+
 <div class="container">
-  <div >
-    <h1>Hello</h1>
-  </div>
-<div class="list-group">
-  <button type="button" class="list-group-item list-group-item-action active">
-    Cras justo odio
-  </button>
-  <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-  <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-  <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-  <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
-</div>
-  <div>
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Должность</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+    <div>
+        <h1>Hello</h1>
+    </div>
+    <div class="list-group">
+<!--        <button type="button" class="list-group-item list-group-item-action active"> Cras justo odio</button>-->
+        <!--  <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>-->
 
-  <button type="submit" class="btn btn-primary">Сохранить</button>
-</form></div>
+        <!--  <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>-->
+        <!--  <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>-->
+      <tr th:each="worker : ${workers}">
+        <button type="button" onclick="select($event)" class="list-group-item list-group-item-action" th:text="${worker.position}"></button>
+      </tr>
+    </div>
+    <div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Должность</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                       placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+    </div>
 
 </div>
+
+<div th:insert="footer::foot"></div>
 </body>
 
-</head>
 </html>
