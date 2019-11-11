@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -14,15 +15,25 @@ import java.util.Date;
 public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @NotNull
     private Integer id;
+    @NotNull
     private String sirname ;
+    @NotNull
     private String name  ;
+    @NotNull
     private String patronymic   ;
+    @NotNull
     private LocalDate birth    ;
+    @NotNull
     private String phone;
+    @NotNull
     private String address ;
+    @NotNull
     private String mail  ;
-    private String remark   ;
+    @NotNull
+    private String remark;
+    @NotNull
     private String history    ;
     private Integer localid;
     private String podr;
