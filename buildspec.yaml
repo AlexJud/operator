@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Set artifcat version $CODEBUILD_BUILD_NUMBER
+      - mvn versions:set -DnewVersion=$CODEBUILD_BUILD_NUMBER
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn package
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Artifact lokks like `ls -la target`
+artifacts:
+  files:
+    - target/operator-$CODEBUILD_BUILD_NUMBER.jar
