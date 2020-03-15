@@ -6,11 +6,14 @@ phases:
       docker: 18
   pre_build:
     commands:
+      - echo Set artifcat version $CODEBUILD_BUILD_NUMBER
+      - mvn versions:set -DnewVersion=$CODEBUILD_BUILD_NUMBER
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
   build:
     commands:
       - echo Build started on `date`
+      - mvn package
       - echo Building the Docker image...          
       - docker build -t $IMAGE_REPO_NAME:$IMAGE_TAG .
       - docker tag $IMAGE_REPO_NAME:$IMAGE_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG      
